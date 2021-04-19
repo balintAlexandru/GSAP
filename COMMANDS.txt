@@ -1,0 +1,32 @@
+Gsap are 3 metode de acces :
+	gsap.to();
+	gsap.from();
+	gsap.fromTo();
+
+Avem Tween si Timeline
+
+Tween = Can change a single property of a single object over time.
+Timeline = A container for multiple tweens
+
+gsap.to("element" , {x:value, y:value}); --- > comanda care muta elementul din pozitia lui initiala la coordonate
+ 
+Propietati gsap=       x :
+                       y :
+                       stagger : 1 --> astepata 1 secunda pana la urmatoarea animatie daca ai clase
+                       duration :
+                       fill:"color"
+                       scale:
+		       skewX: --> inclina elementul intr o parte
+                       skewY:
+                       delay:
+		       repeat: // daca vrei sa repeti la infinit pui -1.
+                       yoyo:true --> repeta comanda reverse dupa ce a facut facut actiune
+
+		       ease : // se ocupa de acceleratie si deceleratie
+                              "linear" // nu incetineste cand ajunge la destinatie
+                              "bounce" // balanseaza obiectul cand ajunge la destinatie
+                              "elastic"
+			      "back"
+gsap.from("element", {x:value, y:value}) - > coamnda care muta elementul din pozitia x si y in pozitia lui initiala.
+gsap.fromTo(".ema", {x:value, y:value}, {x:value1, y:value1}) --> comanda care muta elementul din prima pozitie 
+                                                                  in a 2 a.
